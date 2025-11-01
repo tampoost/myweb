@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bé iu Của Anh</title>
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ✅ CSS: thêm đường dẫn thư mục codemau -->
+    <link rel="stylesheet" href="codemau/style.css">
 </head>
+
 <body class="preload">
     <!-- Enhanced animated background -->
     <div class="bubbles" id="bubbles"></div>
@@ -18,8 +23,10 @@
         <div class="calculator-screen" id="calculatorScreen">
             <div class="input-avatar-row">
                 <div class="avatar-square">
-                    <img id="avatarImg" src="img/gaixenh1.jpg" alt="Avatar" style="display:block;">
+                    <!-- ✅ Ảnh nằm trong codemau/img -->
+                    <img id="avatarImg" src="codemau/img/gaixenh1.jpg" alt="Avatar" style="display:block;">
                 </div>
+
                 <div class="input-and-keypad">
                     <div class="calculator-title">Nhập ngày sinh của bé</div>
                     <input type="password" class="display" id="display" placeholder="••••••" maxlength="6">
@@ -40,28 +47,30 @@
                 </div>
             </div>
         </div>
+
+        <!-- ✅ Nhạc cũng trong codemau -->
         <audio id="myAudio">
-            <source src="thienly.mp3" type="audio/mp3">
+            <source src="codemau/thienly.mp3" type="audio/mp3">
             Trình duyệt của bạn không hỗ trợ thẻ audio.
         </audio>
     </div>
 
-    <!-- Birthday screen nằm ngoài container -->
+    <!-- Birthday screen -->
     <div class="birthday-screen" id="birthdayScreen" style="display:none;">
-        <!-- Trang lời chúc đẹp -->
         <div class="wishes-page" id="wishesPage">
             <div class="main-title">
                 <h1 class="rainbow-text">💗CHÚC MỪNG SINH NHẬT💗</h1>
                 <div class="subtitle">Ấn ảnh bên dưới trước nè</div>
             </div>
             
-            <!-- Thiệp 3D -->
             <div class="birthday-card-section">
                 <div class="card-3d">
                     <div class="card-imgBox">
                         <div class="card-bark"></div>
-                        <img src="img/gaixenh.jpg" alt="Birthday">
+                        <!-- ✅ Ảnh trong codemau/img -->
+                        <img src="codemau/img/gaixenh.jpg" alt="Birthday">
                     </div>
+
                     <div class="card-details">
                         <h4>HAPPY BIRTHDAY</h4>
                         <div style="text-align:left;">
@@ -71,27 +80,35 @@
                             <p>Cảm ơn em vì: </p>
                             <p>Vì đã ở bên cạnh anh và đồng hành cùng anh trong 3 năm vừa qua. Tuổi mới chúc babi nhiều nìm dui, hạnh phúc,
                             xinh gái, dễ thương và đạt được những gì mà mình muốn nhaa💕. Anh yêu bé nhìu, hãy cứ tự tin tiến về phía trước vì anh vẫn mãi ợ đằng sau làm điểm tựa choa em nếu bé cần ạ. Mãi iu bé 💕</p>
+
                             <p style="margin-top:24px;text-align:right;font-style:italic;color:#c44569;font-size:16px;">
-            Ký Tên<br>
-            <span style="font-family:'Dancing Script',cursive;font-size:13px;color:#f388ac;">Nukilona</span><br>
-            <span style="font-family:'Dancing Script',cursive;font-size:13px;color:#ec6894;text-align: center;"> (Cục cưng cụa bé)”</span>
-        </p>
-        <div style="text-align:center;margin-top:18px;">
-            <span style="font-size:24px;color:#ff6b9d;">♡ ♡ ♡</span>
-        </div>
+                                Ký Tên<br>
+                                <span style="font-family:'Dancing Script',cursive;font-size:13px;color:#f388ac;">Nukilona</span><br>
+                                <span style="font-family:'Dancing Script',cursive;font-size:13px;color:#ec6894;text-align:center;">(Cục cưng cụa bé)”</span>
+                            </p>
+
+                            <div style="text-align:center;margin-top:18px;">
+                                <span style="font-size:24px;color:#ff6b9d;">♡ ♡ ♡</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <button class="continue-btn" onclick="showLetter()">Mở quà nè</button>
-            <audio id="myAudio">
-            <source src="thienly2.mp3" type="audio/mp3">
-            Trình duyệt của bạn không hỗ trợ thẻ audio.
-        </audio>
+
+            <audio id="myAudio2">
+                <source src="codemau/thienly2.mp3" type="audio/mp3">
+                Trình duyệt của bạn không hỗ trợ thẻ audio.
+            </audio>
         </div>
+    </div>
+
     <div id="heartGallery" class="heart-gallery" style="display:none;"></div>
-    
-    <script src="lang.js"></script>
+
+    <!-- ✅ Script JS trong codemau -->
+    <script src="codemau/lang.js"></script>
+
     <script>
     // Phát nhạc khi chạm vào màn hình lần đầu
     let audioPlayed = false;
